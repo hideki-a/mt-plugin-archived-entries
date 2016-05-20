@@ -1,0 +1,9 @@
+id: ArchivedEntries
+name: ArchivedEntries
+key: ArchivedEntries
+version: 1.0.0
+author_link: https://www.anothersky.pw/
+author_name: Hideki Abe
+tags:
+    block:
+        ArchivedEntries: $ArchivedEntries::ArchivedEntries::Tags::_hdlr_archived_entries
