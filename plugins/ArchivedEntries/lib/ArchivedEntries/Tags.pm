@@ -10,7 +10,7 @@ sub _hdlr_archived_entries {
     $month += 1;
 
     my $start = sprintf "%4d%02d01000000", $year, $month;
-    my $end   = sprintf "%4d%02d%02d%02d%02d%02d", $year, $month, $day, $hour, $min, $sec;
+    my $end   = sprintf "%4d%02d%02d235959", $year, $month, $day - 1;
     my $blog = $ctx->stash('blog');
     my @entries = MT::Entry->load(
         {   blog_id     => $blog->id,
